@@ -1,0 +1,147 @@
+/* CSS Reset */
+*{
+   margin: 0%;
+   padding:0%;
+}
+    
+ /* CSS variables */
+ :root{
+   --navbar-height: 59px;
+
+ }
+
+ /* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+
+
+}
+/*Navigation Bar: Logo and Image*/
+#logo{
+    margin: 34px 45px;
+}
+#logo img{
+    height: 150px;
+    margin: 12px 24px;
+}
+
+
+/*Navigation bar: list styling*/
+
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', 'cursive';
+    
+}
+   
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+
+
+
+
+}
+#navbar ul li{
+ 
+   list-style: none;
+   font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color: yellow;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+ 
+ }
+ #navbar ul li a:hover{
+    color: coral;
+    background-color: white;
+    
+ 
+ }
+
+
+/* Home Section*/
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+#Home h1{
+    text-align: center;
+    font-family: 'Bree Serif', 'serif';
+}
+#Home p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', 'serif';
+}
+
+/*utility class*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: yellow;
+    color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+/* Contact Section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+    font-family: sans-serif;
+}
+
+
+
+    
